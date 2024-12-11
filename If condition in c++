@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int a,b,c,d;
+cout <<"Enter any number:";
+cin>>a;
+cout <<"enter a number again:";
+cin >>b;
+cout <<"If the entered number is in string then what will be the sum at answer?";
+cin >>c;
+d = a+b;
+if (c==d){
+cout <<"youve guessed the wrong answer !!";
+}
+cout <<"youve entered the wrong answer !!";
+return 0
+}
+//mailey yo code hawa garya ho hai, mistake vayo vanne malai message gara 

@@ -1,0 +1,62 @@
+//uff barely complete garye -_-
+#include<iostream>
+#include<cstdio>
+#include<cmath>
+using namespace std;
+int main()
+{
+    float a, b, c, d, i;
+    int n, e;
+    cout << "________________________________________\n";
+    cout << "___________ CALCULATOR __________\n";
+    cout << "________________________________________\n";
+    cout << "Enter the number: ";
+    scanf("%f", &a);
+    cout << "What would you like to do?: \n1: Find square root \n2: Find multiplication \n3: Enter another number for further entry";
+    cin >> n;
+    if (n == 1) {
+        double result;
+        result = std::sqrt(a);
+        std::cout << "The square root of " << a << " is " << result << "\n";
+    } 
+    else if (n == 2) {
+        for (i = 1; i <= 10; i++) {  
+            c = a * i; 
+            cout << c << " "; 
+        }
+        cout << "\nThe multiples of " << a << " till ten are above.\n";
+    } 
+    else if (n == 3) {
+        cout << "Enter second number: ";
+        scanf("%f", &b);
+        cout << "What would you like to do:\n1: Add \n2: Subtract\n3: Multiply \n4: Divide\n";
+        cin >> e;
+        if (e == 1) {
+            d = a + b;
+            cout << "The sum of " << a << " and " << b << " is " << d << "\n";
+        } 
+        else if (e == 2) {
+            d = a - b;
+            cout << "The subtraction of " << a << " and " << b << " is " << d << "\n";
+        } 
+        else if (e == 3) {
+            d = a * b;
+            cout << "The multiplication of " << a << " and " << b << " is " << d << "\n";
+        } 
+        else if (e == 4) {
+            if (b != 0) {
+                d = a / b;
+                cout << "The division of " << a << " and " << b << " is " << d << "\n";
+            } else {
+                cout << "Division by zero is not allowed!\n";
+            }
+        } 
+        else {
+            cout << "DID YOU JUST ENTER THE UNLISTED WORD? \nBYE BYE\n";
+        }
+    } else {
+        cout << "DID YOU JUST ENTER THE UNLISTED NUMBER ?\n BYE BYE ";
+    }
+    return 0;
+}
+    

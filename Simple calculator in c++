@@ -17,7 +17,7 @@ int main()
     if (n == 1) {
         double result;
         result = std::sqrt(a);
-        std::cout << "The square root of " << a << " is " << result << "\n";
+        cout << "The square root of " << a << " is " << result << "\n";
     } 
     else if (n == 2) {
         for (i = 1; i <= 10; i++) {  
